@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "crossexam",
+  "version": "0.1.0",
+  "description": "Cross-examine ChatGPT and Gemini using your logged-in browser sessions.",
+  "minimum_chrome_version": "116",
+  "permissions": ["sidePanel", "scripting"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://gemini.google.com/*"
+  ],
+  "action": {
+    "default_title": "Open crossexam"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  }
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crossexam — Probe</title>
+  </head>
+  <body>
+    <main>
+      <h1>crossexam</h1>
+      <p class="intro">Phase 0 page probe</p>
+      <button id="probe" type="button">Probe active tab</button>
+      <button id="copy" type="button" disabled>Copy JSON report</button>
+      <p id="status" role="status" aria-live="polite">
+        Open ChatGPT or Gemini, then run the probe.
+      </p>
+      <label for="report">Probe report</label>
+      <textarea id="report" readonly spellcheck="false" placeholder="The report will appear here."></textarea>
+    </main>
+    <script type="module" src="/src/sidepanel/main.ts"></script>
+  </body>
+</html>
